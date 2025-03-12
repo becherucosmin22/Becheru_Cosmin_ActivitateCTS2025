@@ -1,13 +1,14 @@
-package Librarie;
+package Singleton;
 
-public class LibrarieEager {
+public class LibrarieLazy {
     private String nume;
     private String locatie;
     private int codFiscal;
 
-    private static final LibrarieEager instanta = new LibrarieEager();
+    // Varianta Lazy: instanța e inițializată doar la nevoie.
+    private static LibrarieLazy instanta;
 
-    private LibrarieEager() {
+    private LibrarieLazy() {
         this.nume = "BookHeaven";
         this.locatie = "Bd. Libertatii Nr. 12";
         this.codFiscal = 654321;
@@ -37,7 +38,12 @@ public class LibrarieEager {
         this.codFiscal = codFiscal;
     }
 
-    public static LibrarieEager getInstanta() {
+    // Metodă statică pentru a obține instanța unică.
+    // Dacă instanța nu există, o creăm la prima apelare.
+    public static LibrarieLazy getInstanta() {
+        if (instanta == null) {
+            instanta = new LibrarieLazy();
+        }
         return instanta;
     }
 }
