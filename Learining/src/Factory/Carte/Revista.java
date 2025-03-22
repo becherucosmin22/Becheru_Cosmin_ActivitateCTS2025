@@ -1,4 +1,4 @@
-package Factory;
+package Factory.Carte;
 
 
 public class Revista extends ProdusCarte {

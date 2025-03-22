@@ -1,14 +1,14 @@
-package Singleton;
+package Singleton.Librarie;
 
-public class LibrarieThreadSafe {
+public class LibrarieLazy {
     private String nume;
     private String locatie;
     private int codFiscal;
 
-    // Varianta Thread-Safe: instanța e inițializată doar la nevoie și este thread-safe.
-    private static LibrarieThreadSafe instanta;
+    // Varianta Lazy: instanța e inițializată doar la nevoie.
+    private static LibrarieLazy instanta;
 
-    private LibrarieThreadSafe() {
+    private LibrarieLazy() {
         this.nume = "BookHeaven";
         this.locatie = "Bd. Libertatii Nr. 12";
         this.codFiscal = 654321;
@@ -40,9 +40,9 @@ public class LibrarieThreadSafe {
 
     // Metodă statică pentru a obține instanța unică.
     // Dacă instanța nu există, o creăm la prima apelare.
-    public static synchronized LibrarieThreadSafe getInstanta() {
+    public static LibrarieLazy getInstanta() {
         if (instanta == null) {
-            instanta = new LibrarieThreadSafe();
+            instanta = new LibrarieLazy();
         }
         return instanta;
     }

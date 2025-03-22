@@ -1,4 +1,4 @@
-package Singleton;
+package Singleton.Librarie;
 
 public class Program {
     public static void main(String[] args) {

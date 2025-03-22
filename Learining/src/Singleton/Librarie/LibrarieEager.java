@@ -1,4 +1,4 @@
-package Singleton;
+package Singleton.Librarie;
 
 public class LibrarieEager {
     private String nume;

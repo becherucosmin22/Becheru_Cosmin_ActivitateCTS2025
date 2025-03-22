@@ -1,4 +1,4 @@
-package Factory;
+package Factory.Carte;
 
 public abstract class ProdusCarte {
 

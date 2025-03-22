@@ -1,4 +1,4 @@
-package Factory;
+package Factory.Carte;
 
 
 public class Enciclopedie extends ProdusCarte {

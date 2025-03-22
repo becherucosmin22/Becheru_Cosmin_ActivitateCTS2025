@@ -1,8 +1,5 @@
-package Factory;
+package Factory.Carte;
 
-import Factory.CategorieCarte;
-import Factory.LibrarieFactory;
-import Factory.ProdusCarte;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
