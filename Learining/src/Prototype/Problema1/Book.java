@@ -1,4 +1,4 @@
-package Prototype;
+package Prototype.Problema1;
 
 public class Book implements Cloneable {
     private String title;
